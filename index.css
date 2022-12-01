@@ -41,6 +41,7 @@ body{
 
 .fadeein{
     animation: 500ms linear fadeeee;
+    
 }
 
 @keyframes fadeeee {
@@ -77,13 +78,15 @@ body{
     margin: 50px;
     text-align: center;
     justify-content: center;
-    background-image: url(9089b3609b6595940092a50f59b027fa.gif);
+    background-image: url(gradient.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* transform: translateY(-20px); */
+
 }
 
 .created p{
@@ -91,7 +94,20 @@ body{
     margin-bottom: auto;
     font-size: 25;
     font-weight: bold;
+    
 }
+
+
+.aslit{
+    animation: 0.7s infinite aslit alternate;
+}
+
+@keyframes aslit{
+    0%{transform: translateY(7px);}
+    100%{transform: translateY(-7px);}
+}
+
+
 
 
 .start-button{
@@ -100,11 +116,11 @@ body{
     height: 40px;
     margin-top: 200px;
     border-radius: 10px;
-    background-image: url(Digital_rain_animation_small_letters_clear.gif);
+    background-image: url(6dc8f11334c7e1564bde781d84f9dfb7.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    color: rgb(6, 184, 80);
+    color: rgb(21, 255, 0);
     transition: 500ms;
 }
 
@@ -117,21 +133,167 @@ body{
 .slider{
     position: absolute;
     display: none;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
-    background-color: red;
+}
+
+
+.front-end{
+    display: flex;
+    width: 50%;
+    height: 60%;
+    border: black 5px solid;
+    background-image: url(front-end-vs-back-end-.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center; */
     border-radius: 15px;
 }
 
 
+.backend{
+    display: none;
+    width: 50%;
+    height: 60%;
+    border: black 5px solid;
+    background-image: url(/!images/fq0l8nj88hries5v5a0h.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center; */
+    border-radius: 15px;
+}
 
 
+.json{
+    display: none;
+    width: 20%;
+    height: 20%;
+    border: black 5px solid;
+    background-image: url(/!images/json.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center; */
+    border-radius: 15px;
+}
 
 
+.jsonformatter{
+    display: none;
+    width: 30%;
+    height: 30%;
+    border: black 5px solid;
+    background-image: url(/!images/jsonformatter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center; */
+    border-radius: 15px;
+}
 
 
+.goright{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 70px;
+    background-color: #05792a;
+    margin-right: auto;
+    right: 70;
+    opacity: 0;
+    border-radius: 10px;
+    outline-offset: 3px;
+    transition: 100ms;
+    justify-content: center;
+    align-items: center;
+}
 
+
+.goleft{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 70px;
+    background-color: #05792a;
+    left: 70;
+    opacity: 0;
+    border-radius: 10px;
+    outline-offset: 3px;
+    transition: 100ms;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.goright::before{
+    content: "";
+    width: 20px;
+    height: 5px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+
+
+.goright::after{
+    content: "";
+    width: 20px;
+    height: 5px;
+    background-color: black;
+    transform: rotate(320deg);
+    border-radius: 5px;
+}
+
+
+.goright:hover{
+    outline: 2px white solid;
+    cursor: pointer;
+    background-color: #12e655;
+}
+
+
+.goleft:hover{
+    outline: 2px white solid;
+    cursor: pointer;
+    background-color: #12e655;
+    opacity: 1;
+}
+
+
+.goleft::before{
+    content: "";
+    width: 20px;
+    height: 5px;
+    background-color: black;
+    transform: rotate(320deg);
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+
+
+.goleft::after{
+    content: "";
+    width: 20px;
+    height: 5px;
+    background-color: black;
+    transform: rotate(45deg);
+    border-radius: 5px;
+}
+
+
+.goright:active{
+    transform: scale(0.8);
+}
+
+
+.goleft:active{
+    transform: scale(0.8);
+}
 
 
 
@@ -167,10 +329,17 @@ body{
       width: 25px;
       -webkit-animation: spin .5s infinite;
               animation: spin .5s infinite;
-      background: var(--primary, rgb(15, 97, 22));
+      /* background: var(--primary, rgb(0, 167, 233)); */
+      background-image: url(gradient.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
       position: absolute;
       left: 50%;
       top: 50%;
       margin-left: -25px;
       margin-top: -25px; }
 
+
+
+      

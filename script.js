@@ -7,11 +7,14 @@ function start(){
     var bb = document.getElementById("bb")
     var created = document.getElementById("created")
     var slider = document.getElementById("slider")
+    goright = document.getElementById("goright")
+    goleft = document.getElementById("goleft")
     charkheshia.classList.add("fadee")
     charkheshia2.classList.add("fadee")
     bb.classList.add("fadee")
 
     setTimeout(() => {
+        created.classList.remove("aslit")
         created.classList.add("fadeein")
     }, "200");
 
@@ -39,9 +42,13 @@ function start(){
 
     setTimeout(() => {
         slider.classList.add("fad")
+        goleft.classList.add("fad")
+        goright.classList.add("fad")
     }, "2700");
 
     setTimeout(() => {
         slider.style.opacity="1"
+        goright.style.opacity="1"
+        goleft.style.opacity="1"
     }, "3700");
 }
