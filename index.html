@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tolid-Mohtava</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
@@ -25,12 +25,47 @@
         <div class="slider" id="slider">
             <div class="front-end" id="front"></div>
             <div class="alr" id="alr"><input type="text" placeholder="Enter your text here" id="alri"><button class="btn btn-outline-primary" onclick="alerting()">Click</button></div>
+            <div class="basem" id="basem">
+                <form name="ali">
+            <table>
+                <tr>
+                    <td colspan="4"><input type="text" id="hesab" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="button" style="width: 100%;height:100%;" value="1" onclick="ali.hesab.value += '1'"></td>
+                    <td><input type="button" style="width: 100%;height:100%;" value="2" onclick="ali.hesab.value += '2'"></td>
+                    <td><input type="button" style="width: 100%;height:100%;" value="3" onclick="ali.hesab.value += '3'"></td> 
+                    <td><input type="button" style="width: 100%;height:100%;" value="+" onclick="ali.hesab.value += '+'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" style="width: 100%;height:100%;" value="4" onclick="ali.hesab.value += '4'"></td>
+                    <td><input type="button" style="width: 100%;height:100%;" value="5" onclick="ali.hesab.value += '5'"></td>
+                    <td><input type="button" style="width: 100%;height:100%;" value="6" onclick="ali.hesab.value += '6'"></td>
+                    <td><input type="button" style="width: 100%;height:100%;" value="-" onclick="ali.hesab.value += '-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" style="width: 100%;height:100%;" value="7" onclick="ali.hesab.value += '7'"></td>
+                    <td><input type="button" style="width: 100%;height:100%;" value="8" onclick="ali.hesab.value += '9'"></td>
+                    <td><input type="button" style="width: 100%;height:100%;" value="9" onclick="ali.hesab.value += '9'"></td>
+                    <td><input type="button" style="width: 100%;height:100%;" value="x" onclick="ali.hesab.value += '*'"></td>
+                </tr>
+                    <td><input type="button" style="width: 100%;height:100%;" value="C" onclick="ali.hesab.value = ''"></td> 
+                    <td><input type="button" style="width: 100%;height:100%;" value="0" onclick="ali.hesab.value += '0'"></td>  
+                    <td><input type="button" style="width: 100%;height:100%;" value="=" onclick="ali.hesab.value = eval(ali.hesab.value)"></td>
+                    <td><input type="button" style="width: 100%;height:100%;" value="/" onclick="ali.hesab.value += '/'"></td>
+            </table>
+                </form>
+            </div>
+            
             <div class="backend" id="backend"></div>
             <div class="json" id="json"></div>
             <div class="jsonformatter" id="jsonformatter"></div>
+            <div class="goright" id="goright" onclick="clickright()"></div>
         </div>
 
-        <div class="goright" id="goright" onclick="clickright()"></div>
+        </div>
+
+        
 
     </div>
 

@@ -64,9 +64,10 @@ function start(){
 
 var f1 = document.getElementById("front")
 var f2 = document.getElementById("alr")
-var f3 = document.getElementById("backend")
-var f4 = document.getElementById("json")
-var f5 = document.getElementById("jsonformatter")
+var f3 = document.getElementById("basem")
+var f4 = document.getElementById("backend")
+var f5 = document.getElementById("json")
+var f6 = document.getElementById("jsonformatter")
 
 
 var f1d = window.getComputedStyle(f1).display;
@@ -74,10 +75,11 @@ var f2d = window.getComputedStyle(f2).display;
 var f3d = window.getComputedStyle(f3).display;
 var f4d = window.getComputedStyle(f4).display;
 var f5d = window.getComputedStyle(f5).display;
+var f6d = window.getComputedStyle(f5).display;
 
 
 
-var imagess = [f1,f2,f3,f4,f5]
+var imagess = [f1,f2,f3,f4,f5,f6]
 if (f1d == "flex"){
     var goh = 0
 }
@@ -93,6 +95,9 @@ else if (f4d == "flex"){
 else if (f5d == "flex"){
     var goh = 4
 }
+else if (f5d == "flex"){
+    var goh = 5
+}
 
 
 
@@ -105,7 +110,7 @@ function clickright(){
         goleft.style.display="flex"
     }
 
-    if(goh == 4){
+    if(goh == 5){
         goright.style.display="none"
     }
 }
