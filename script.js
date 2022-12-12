@@ -125,7 +125,7 @@ function clickleft(){
         goleft.style.display="none"
     }
 
-    if(goh == 2){
+    if(goh == 4){
         goright.style.display="flex"
     }
 }
